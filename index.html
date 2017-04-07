@@ -1,0 +1,23 @@
+---
+layout: default
+title: Archive
+description: Analog photography
+container_class: fixed_width
+---
+
+<ul class="unstyled">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.url }}{{ post.url }}">
+        <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>
+          {{ post.date | date: "%B %e, %Y" }}
+        </time>
+      </a>
+      <p>
+        <a href="{{ site.url }}{{ post.url }}">
+          <img src="{{ site.url }}/assets/{{ post.date | date: "%Y-%m-%d" }}-{{ post.title }}.png">
+        </a>
+      </p>
+    </li>
+  {% endfor %}
+</ul>
