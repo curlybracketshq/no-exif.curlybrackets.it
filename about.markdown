@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: about
 ---
 
 A collection of analog images.

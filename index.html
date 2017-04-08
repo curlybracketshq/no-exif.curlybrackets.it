@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Archive
+title: archive
 description: Analog photography
 container_class: fixed_width
 ---
@@ -10,7 +10,7 @@ container_class: fixed_width
     <li>
       <a href="{{ site.url }}{{ post.url }}">
         <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>
-          {{ post.date | date: "%B %e, %Y" }}
+          {{ post.date | date: "%B %e, %Y" | downcase }}
         </time>
       </a>
       <p>

@@ -5,7 +5,7 @@ layout: default
 <article>
   <header>
     <time datetime='{{ page.date | date: "%Y-%m-%d" }}'>
-      {{ page.date | date: "%B %e, %Y" }}
+      {{ page.date | date: "%B %e, %Y" | downcase }}
     </time>
   </header>
 
