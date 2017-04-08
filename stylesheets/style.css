@@ -10,10 +10,6 @@ body {
   font-size: 18px;
 }
 
-h1 {
-  color: rgba(0, 0, 255, 0.6);
-}
-
 h1, h2 {
   font-family: 'Space Mono', monospace;
 }
@@ -48,7 +44,7 @@ a,
 a:hover,
 a:active,
 a:visited {
-  color: rgba(0, 0, 255, 0.6);
+  color: #404040;
   text-decoration: none;
 }
 
@@ -176,7 +172,7 @@ footer {
 }
 
 #container {
-  padding: 20px;
+  margin: 20px;
 }
 
 #container.fixed_width {
@@ -185,8 +181,8 @@ footer {
 
 @media screen and (max-width:825px) {
   #container {
-    margin: 0 auto;
+    margin: 20px auto;
     width: auto;
-    max-width: 100%;
+    max-width: 90%;
   }
 }
