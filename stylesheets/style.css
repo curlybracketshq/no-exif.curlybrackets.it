@@ -5,14 +5,9 @@ html, body {
 }
 
 body {
-  /* System Fonts with system-ui */
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: system-ui, sans-serif;
   color: #404040;
   font-size: 18px;
-}
-
-h1, h2 {
-  font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
 }
 
 h1, h2, h3, h4 {
@@ -91,7 +86,6 @@ nav.menu li {
 }
 
 time {
-  font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
   font-size: 75%;
 }
 
