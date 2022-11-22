@@ -4,25 +4,25 @@ layout: default
 
 <article>
   <header>
-    <time datetime='{{ page.date | date: "%Y-%m-%d" }}'>
-      {{ page.date | date: "%B %e, %Y" | downcase }}
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
+      {{ page.date | date: '%B %e, %Y' | downcase }}
     </time>
   </header>
 
-  <img src="{{ site.images_url }}/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title }}.png">
+  <img src="{{ site.images_url }}/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title }}.png">
 
   {{ content }}
 
   {% if page.previous.url or page.next.url %}
-    <nav>
-      <ul class="unstyled">
-        {% if page.previous.url %}
-          <li><a href="{{ page.previous.url }}">prev</a></li>
-        {% endif %}
-        {% if page.next.url %}
-          <li><a href="{{ page.next.url }}">next</a></li>
-        {% endif %}
-      </ul>
-    </nav>
+  <nav>
+    <ul class="unstyled">
+      {% if page.previous.url %}
+      <li><a href="{{ page.previous.url }}">prev</a></li>
+      {% endif %}
+      {% if page.next.url %}
+      <li><a href="{{ page.next.url }}">next</a></li>
+      {% endif %}
+    </ul>
+  </nav>
   {% endif %}
 </article>

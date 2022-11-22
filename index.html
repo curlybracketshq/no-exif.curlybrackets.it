@@ -9,13 +9,13 @@ container_class: fixed_width
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">
-      <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>
-        {{ post.date | date: "%B %e, %Y" | downcase }}
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+        {{ post.date | date: '%B %e, %Y' | downcase }}
       </time>
     </a>
     <p>
       <a href="{{ post.url }}">
-        <img src="{{ site.images_url }}/{{ post.date | date: "%Y-%m-%d" }}-{{ post.title }}.png">
+        <img src="{{ site.images_url }}/{{ post.date | date: '%Y-%m-%d' }}-{{ post.title }}.png">
       </a>
     </p>
   </li>
